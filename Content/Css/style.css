@@ -1,0 +1,14 @@
+﻿body {
+	position: relative;
+	min-height: 100%;
+}
+
+.navbar-static-top {
+	margin-bottom: 19px;
+}	
+
+@media (min-width: 767px) {
+	.banner{
+		display: none;
+	}
+}

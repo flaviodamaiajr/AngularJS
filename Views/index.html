@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS - Inheritance</title>
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+      }
+  </style>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/f1e6ce9dbb.css">
+  <link rel="stylesheet" href="../Content/Css/style.css">
+</head>
+<body ng-app="app" ng-controller="IndexController as ctrl">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://angularjs.org" target="_blank">
+                    <img src="https://angularjs.org/img/AngularJS-small.png" title="AngularJS" alt="AngularJS" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" data-toggle="tooltip" data-placement="bottom" title="Fork me on GitHub"><a href="http://bit.ly/Inheritance-AngularJS"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>AngularJS</h1>
+            <p>Um simples exemplo de como utilizar herença de controller com AngularJS.</p>
+            <p>
+                <button class="btn btn-lg btn-success" role="button" ng-click="ctrl.sayHello('base')">Base Controller</button>
+                <button class="btn btn-lg btn-info" role="button" ng-click="ctrl.sayHello('index')">Index Controller</button>
+            </p>
+        </div>
+
+    </div> <!-- /container -->
+    <hr />
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Homemade {{ ctrl.year }} © <a href="http://bit.ly/flaviodamaiajr" data-toggle="tooltip" data-placement="bottom" title="My Linkedin"> Flávio Da Maia Jr </a></p>
+        </div>
+    </footer>
+
+    <a href="http://bit.ly/Inheritance-AngularJS" class="banner"><img style="position: absolute; top: 0; right: 0; border: 0; margin-top: 50px;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="../Controllers/app.js"></script>
+    <script type="text/javascript" src="../Controllers/base-controller.js"></script>
+    <script type="text/javascript" src="../Controllers/index-controller.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../Scripts/bootbox.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 (function () {
 
-    BaseController.$inject = ['$log', '$timeout'];
+    BaseController.$inject = ['$log'];
     app.controller("BaseController", BaseController);
 
-    function BaseController($log, $timeout) {
+    function BaseController($log) {
 
         this.sayHello = function () {
             this.customMessage("Sou a função da <strong>BaseController</strong>! <i class='fa fa-2x fa-hand-spock-o' aria-hidden='true'></i>", "Hey, Spock!");

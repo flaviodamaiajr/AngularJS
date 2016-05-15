@@ -1,9 +1,11 @@
 (function () {
 
-    IndexController.$inject = ['$log', '$timeout', '$controller'];
+    // Necessário efetuar a injeção de dependencia do $controller
+    // que é o serviço responsável por efetuar a instância da BaseController na IndexController.
+    IndexController.$inject = ['$log', '$controller'];
     app.controller("IndexController", IndexController);
 
-    function IndexController($log, $timeout, $controller) {
+    function IndexController($log, $controller) {
 
         var ctrl = this;        
         // Criada a instância da controller Base.

@@ -10,8 +10,6 @@
         var ctrl = this;        
         // Criada a instância da controller Base.
         ctrl.base = $controller('BaseController', {});
-
-        ctrl.year = new Date().getFullYear();        
         
         ctrl.sayHello = function (button) {
 
